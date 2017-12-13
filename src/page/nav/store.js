@@ -1,0 +1,23 @@
+export default {
+		value:[
+			{
+				itemId:'index',
+				itemName:'首页',
+				sort:3
+			},
+			{
+				itemId:'blog',
+				itemName:'博客',
+				sort:2
+			},
+			{
+				itemId:'003',
+				itemName:'003',
+				sort:1
+			},
+			{
+				itemId:'vue',
+				itemName:'VUE组件'
+			}
+		]
+}
