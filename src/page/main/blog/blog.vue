@@ -7,7 +7,6 @@
 		</div>
 		<p class="blog-content-article"></p>
 	</div>
-	
 </template>
 <script>
 	
