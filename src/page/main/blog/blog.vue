@@ -9,7 +9,19 @@
 	</div>
 </template>
 <script>
-	
+	export default{
+		created(){
+			this.$ajax({
+				method:'post',
+				url:'/getuser',
+				params:{
+					UserId:'521dd',
+				}
+			}).then(function(res){
+				console.log(res);
+			})
+		}
+	}
 </script>
 <style>
 .blog-content{
