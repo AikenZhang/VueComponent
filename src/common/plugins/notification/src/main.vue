@@ -1,6 +1,6 @@
 <template>
 	<transition name="no" @after-leave='afterLeave'>
-		<div class="blog-notification" v-show='visible' @click='click'>
+		<div class="blog-notification" v-show='visible'>
 			<div class="blog-notification-title">
 				<i :class="iconClass" class="blog-notification-icon"></i>
 				<span>{{title}}</span>
@@ -54,9 +54,6 @@
 			}
 		},
 		methods:{
-			click(){
-				this.visible=false;
-			},
 			afterLeave(){
 				this.close();
 			},
@@ -136,7 +133,7 @@
 		right:10px;
   		transition: right .4s
 	}
-	.no-enter{
+	.no-enter,.no-leave-to{
 		right:-300px;
 	}
 </style>

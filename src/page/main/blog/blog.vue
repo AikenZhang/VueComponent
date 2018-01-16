@@ -1,9 +1,9 @@
 <template>
 	<div class="blog-content">
-		<h2 class="blog-topic">贫穷，也会限制我们的格局和眼界</h2>
+		<h2 class="blog-topic" @click="click">贫穷，也会限制我们的格局和眼界</h2>
 		<div class="blog-tagTime">
 			<span class="blog-tag fa fa-remove"></span>
-			<span class="blog-time">2013.01.02</span>
+			<span class="blog-time" @click="clic1">2013.01.02</span>
 		</div>
 		<p class="blog-content-article"></p>
 	</div>
@@ -30,7 +30,17 @@
 			// })
 		},
 		methods:{
-			
+			click(){
+				this.$notifi({
+						type:'war'
+				});
+				//console.log("sss")
+			},
+			clic1(){
+				// this.$notifi({
+				// 		type:'success'
+				// });
+			}
 		}
 	}
 </script>
