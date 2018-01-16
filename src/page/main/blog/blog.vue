@@ -11,15 +11,26 @@
 <script>
 	export default{
 		created(){
-			this.$ajax({
-				method:'post',
-				url:'/getuser',
-				params:{
-					UserId:'521dd',
-				}
-			}).then(function(res){
-				console.log(res);
-			})
+			var params = new URLSearchParams();
+			let me=this;
+			params.append('UserId', '521dd');
+			// this.$ajax({
+			// 	method:'post',
+			// 	url:'/getuser',
+			// 	data:{
+			// 		UserId:'521dd',
+			// 		UserName:'sss',
+			// 		age:17
+			// 	}
+			// }).then(function(res){
+					
+			// })
+			// .catch(function(e){
+			// 	console.log(e);
+			// })
+		},
+		methods:{
+			
 		}
 	}
 </script>

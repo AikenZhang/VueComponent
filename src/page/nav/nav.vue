@@ -20,7 +20,7 @@
 </template>
 <script>
 import getData from './store'
-import showMessage from '../../components/showMessage'
+import showMessage from '@/common/components/showMessage'
 	export default{
 		data(){
 			return{

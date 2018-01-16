@@ -8,6 +8,7 @@
             <router-view/>
       </transition>
     </div>
+    
   </div>
 </template>
 
@@ -50,6 +51,7 @@ export default {
   overflow: hidden;
 }
 .blog-enter-active, .blog-leave-active {
+  opacity: 1;
   transition: opacity .5s
 }
 .blog-enter, .blog-leave-to {

@@ -35,7 +35,7 @@
 	</drop-load>
 </template>
 <script>
-	import dropLoad from '../../../components/dropLoad'
+	import dropLoad from '@/common/components/dropLoad'
 	export default{
 		data(){
 			return {
