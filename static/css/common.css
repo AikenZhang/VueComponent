@@ -1,0 +1,40 @@
+.blog-button{
+	width:60px;
+	height:32px;
+	line-height:32px;
+	display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    border-color: #dcdfe6;
+    color: #606266;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 6px;
+    transition: .1s;
+    font-weight: 500;
+    font-size:14px;
+    border-radius: 5px;
+}
+.blog-button-primary{
+	color: #fff;
+	background-color: #409eff;
+	border-color: #409eff;
+}
+.blog-button-primary:hover{
+	background-color: #59a3ef;
+	border-color:#59a3ef;
+}
+.blog-button:hover{
+	background:#ecf5ff;
+	border-color: #ecf5ff;
+
+}
+.opacity-enter-active, .opacity-leave-active {
+  opacity: 1;
+  transition: opacity .5s
+}
+.opacity-enter, .opacity-leave-to {
+  opacity: 0
+}

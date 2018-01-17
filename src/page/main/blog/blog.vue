@@ -9,11 +9,13 @@
 	</div>
 </template>
 <script>
+//import message from '@/common/plugins/message'
 	export default{
 		created(){
 			var params = new URLSearchParams();
 			let me=this;
 			params.append('UserId', '521dd');
+			//console.log(this.$ajax);
 			// this.$ajax({
 			// 	method:'post',
 			// 	url:'/getuser',
@@ -31,17 +33,26 @@
 		},
 		methods:{
 			click(){
-				this.$notifi({
-						type:'war'
-				});
-				//console.log("sss")
+				// this.$notifi({
+				// 		type:'war'
+				// });
+				this.$message({
+					type:'confirm',
+					message:' 你怎么可以这样',
+					okFun:function(a){
+						console.log(a);
+					}
+				})
 			},
 			clic1(){
 				// this.$notifi({
 				// 		type:'success'
 				// });
 			}
-		}
+		},
+		// components:{
+		// 	message
+		// },
 	}
 </script>
 <style>

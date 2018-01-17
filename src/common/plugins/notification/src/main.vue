@@ -1,5 +1,5 @@
 <template>
-	<transition name="no" @after-leave='afterLeave'>
+	<transition name="noti" @after-leave='afterLeave'>
 		<div class="blog-notification" v-show='visible'>
 			<div class="blog-notification-title">
 				<i :class="iconClass" class="blog-notification-icon"></i>
@@ -99,6 +99,9 @@
 		padding-left:50px;
 		line-height:45px;
 		color:#686868;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
 	}
 	.blog-notification-title{
 		width:100%;
@@ -129,11 +132,11 @@
 	.blog-iconType-info{
 		background: #909399;
 	}
-	.no-enter-active, .no-leave-active {
+	.noti-enter-active, .noti-leave-active {
 		right:10px;
   		transition: right .4s
 	}
-	.no-enter,.no-leave-to{
+	.noti-enter,.noti-leave-to{
 		right:-300px;
 	}
 </style>

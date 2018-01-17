@@ -4,7 +4,7 @@
       <nav-container></nav-container>
     </div>
     <div class="index-right">
-      <transition name="blog">
+      <transition name="opacity">
             <router-view/>
       </transition>
     </div>
@@ -49,12 +49,5 @@ export default {
   right:0;
   bottom: 0;
   overflow: hidden;
-}
-.blog-enter-active, .blog-leave-active {
-  opacity: 1;
-  transition: opacity .5s
-}
-.blog-enter, .blog-leave-to {
-  opacity: 0
 }
 </style>
