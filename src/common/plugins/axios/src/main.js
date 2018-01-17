@@ -37,7 +37,7 @@ const ajax={
 		}
 	},function(error){
 		new Vue().$notifi({
-			type:"war",
+			type:"error",
 			message:'信息错误'
 		})
 		return false;

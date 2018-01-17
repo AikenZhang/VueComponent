@@ -15,21 +15,20 @@
 			var params = new URLSearchParams();
 			let me=this;
 			params.append('UserId', '521dd');
-			//console.log(this.$ajax);
-			// this.$ajax({
-			// 	method:'post',
-			// 	url:'/getuser',
-			// 	data:{
-			// 		UserId:'521dd',
-			// 		UserName:'sss',
-			// 		age:17
-			// 	}
-			// }).then(function(res){
-					
-			// })
-			// .catch(function(e){
-			// 	console.log(e);
-			// })
+			this.$ajax({
+				method:'post',
+				url:'/getuser',
+				data:{
+					UserId:'521dd',
+					UserName:'sss',
+					age:17
+				}
+			}).then(function(res){
+					console.log(res)
+			})
+			.catch(function(e){
+				
+			})
 		},
 		methods:{
 			click(){
