@@ -19,3 +19,12 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+ ### 组件
+- 下拉加载(dropLoad)
+
+### 插件
+- 通知(notification)
+- 提示框(message)
+
+## 组件
+下拉加载(dropLoad)
