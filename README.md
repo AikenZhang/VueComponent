@@ -27,4 +27,20 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - 提示框(message)
 
 ## 组件
-下拉加载(dropLoad)
+##### 下拉加载(dropLoad) 
+##### config
+- loadSvg:  是否启用组件默认的加载动画
+
+    默认: true
+
+
+##### event
+- dropLoad（drop）
+    params
+	- drop: 组件属性对象
+		  isLoading: 是否执行下拉加载
+
+##### slot（插槽）
+- content: 主要内容
+- loading：自定义加载动画
+	 
