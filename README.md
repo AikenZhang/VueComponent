@@ -36,6 +36,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ##### event
 - dropLoad（drop)
+
     params
 	- drop: 组件属性对象
 		  isLoading: 是否执行下拉加载
