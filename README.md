@@ -1,5 +1,5 @@
-# 基于Vue以博客网站的方式展示各种插件／组件
-
+# vue  组件/插件
+参考Element设计模式
 > 1.0.0
 
 ## Build Setup
@@ -35,7 +35,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 ##### event
-- dropLoad（drop）
+- dropLoad（drop)
     params
 	- drop: 组件属性对象
 		  isLoading: 是否执行下拉加载
@@ -43,4 +43,3 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ##### slot（插槽）
 - content: 主要内容
 - loading：自定义加载动画
-	 
