@@ -5,7 +5,7 @@ import App from '@/App'
 import blogContainer from '@/page/main/blog/blogContainer'
 import hl from '@/common/components/HelloWorld'
 import content from '@/page/main/blog/blog'
-
+import vueContent from '@/page/main/vue/vueComponent'
 Vue.use(Router)
 
 export default new Router({
@@ -20,6 +20,9 @@ export default new Router({
       	},{
           path:'/blog/001',
           component:content
+        },{
+          path:'/vue',
+          component:vueContent
         }
       ]
     }

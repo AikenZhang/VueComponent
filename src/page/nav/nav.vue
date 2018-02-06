@@ -5,10 +5,10 @@
 			<div class="nav-head-img">
 				<img src="static/img/0001.jpeg">
 			</div>
-			<p>博客名：{{blogName}}</p>
+			<p>{{blogName}}</p>
 		</div>
 		<ul class="nav-container">
-			<router-link tag='li' v-for="(item,index) in nav" :key="item.sort" :to="'/'+ item.itemId" >{{item.itemName}}</router-link>
+			<router-link tag='li' v-for="item in nav" :key="item.sort" :to="'/'+ item.itemId" >{{item.itemName}}</router-link>
 		</ul>
 		<p style="height30px;"></p>
 		<p class="nav-call">
@@ -19,13 +19,32 @@
 	</div>
 </template>
 <script>
-import getData from './store'
 import showMessage from '@/common/components/showMessage'
 	export default{
 		data(){
 			return{
-				nav:getData.value,
-				blogName:"404"
+				nav:[
+					{
+						itemId:'index',
+						itemName:'Home',
+						sort:3
+					},
+					{
+						itemId:'blog',
+						itemName:'Blog',
+						sort:2
+					},
+					{
+						itemId:'Ext',
+						itemName:'Ext',
+						sort:1
+					},
+					{
+						itemId:'vue',
+						itemName:'Vue'
+					}
+				],
+				blogName:"AikenZhang"
 			}
 		},
 		components:{

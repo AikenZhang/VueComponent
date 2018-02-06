@@ -17,7 +17,7 @@
 			return {
 				type:'success',
 				positon:'top',
-				timeOut:'7000',
+				timeOut:'3000',
 				message:'这是一条信息',
 				visible:false,
 				timer:null
