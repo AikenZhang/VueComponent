@@ -5,9 +5,11 @@ import config from '../config'
 import notifi from '@/common/plugins/notification'
 import ajax from '@/common/plugins/axios'
 import message from '@/common/plugins/message'
+import dropLoad from '@/common/components/dropLoad'
 Vue.config.productionTip = config.dev; //是否开发模式
 Vue.use(message)
 Vue.use(ajax);
 Vue.use(Router);
 Vue.use(notifi);
+Vue.component('dropLoad',dropLoad)
 export default Vue;
