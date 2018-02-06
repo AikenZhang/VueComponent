@@ -35,7 +35,7 @@
 	</drop-load>
 </template>
 <script>
-	import dropLoad from '@/common/components/dropLoad'
+	//import dropLoad from '@/common/components/dropLoad.vue'
 	export default{
 		data(){
 			return {
@@ -83,32 +83,21 @@
 		}
 		},
 		components:{
-			dropLoad
+			//dropLoad
 		},
 		methods:{
-			load:function(c){
-				var me=this;
-				c.loadSvgShow();
-				console.log("加载");
+			load:function(c){		
+				c.showMask();
+				console.log(c.isLoading);
 				setTimeout(function(){
-					c.loadSvgHide();
-					me.dataList.push(
-							{tag:3,
-				time:'两小时',
-				itemId:'001',
-				itemName:'那个曾经被舍友排挤的姑娘，后来走遍了中国',
-				itemContent:'文/怀左同学 01 雪玲是我大学时最好的朋友，我们当时在文学社认识，她是福建姑娘，爱读书写作，更爱浪迹天涯。 很多人都说，她是一个传奇。 02 几个月前她从西藏回来，到武汉找sfsdfsdfsdfsdfsfsdfsdfsdfsdf的身份水电费水电费水电费是非得失的方式水电费水电费水电费水电费水电费水电费水电费说放水电费水电费说放水电费水电费水电费',
-				itemImg:''}
-						)
-				},4000)
-				console.log("sss");
+					c.isLoading=true;
+				},2000)
 			}
 		},
 		mounted(){
 			var mySwiper = new Swiper ('.swiper-container', {
 			    loop: true,
 			    autoplay:true,
-			    
 			    // 如果需要分页器
 			    pagination: {
 			      el: '.swiper-pagination',
