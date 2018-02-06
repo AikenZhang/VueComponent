@@ -101,7 +101,7 @@
 				itemImg:''}
 						)
 				},4000)
-				console.log(this.dataList);
+				console.log("sss");
 			}
 		},
 		mounted(){
